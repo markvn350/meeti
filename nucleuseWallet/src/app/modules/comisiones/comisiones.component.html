@@ -1,0 +1,17 @@
+<section class="comisiones">
+    <div class="comisiones__contenedor">
+        <h2 class="comisiones__heading"></h2>
+        <div class="comisiones__grid">
+            <div class="listado" >
+                <h3 class="comisiones__subtexto">Mientras mas veces utilizas nucleus, menos pagas</h3>
+                <div class="listado__elemento" *ngFor="let a of listP; index as i ">
+                    <h2 class="listado__heading">{{listHeading[i]}}</h2>
+                    <p class="listado__texto">{{a}}</p>
+                </div>
+            </div>
+            <div class="comisiones__imagen">
+                <img src="../../../assets/img/app_3.svg" alt="imagen de comisiones">
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,72 @@
+<main class="contenido-principal contenedor">
+    <h2 class="text-center">Contacto</h2>
+    <form [formGroup]="formUser" class="formulario">
+        <fieldset class="form-box">
+            <legend class="text-center legend-box">Tus Datos</legend>
+            <div class="campo">
+                <label for="Nombre" >Nombre</label> 
+                <input id="Nombre" type="text" formControlName="Nombre"  placeholder="Ingrese su nombre"> 
+            </div>
+            <div class="campo">
+                <label for="Asunto" >Asunto</label> 
+                <input id="Asunto" type="text" formControlName="Asunto"  placeholder="Ingrese el asunto">
+            </div>
+            <div class="campo">
+                <label for="Email" >E-mail</label> 
+                <input id="Email" type="email" formControlName="Email"  placeholder="Ingrese su email"> 
+            </div> 
+            <div class="campo">
+                <label for="Telefono" >Telefono</label> 
+                <input id="Telefono" type="tel" formControlName="Telefono"  placeholder="Ingrese su telefono">
+            </div>
+            <div class="campo">
+                <label for="Mensaje" >Mensaje</label> 
+                <textarea id="Mensaje" type="text" formControlName="Mensaje" ></textarea> 
+            </div> 
+        </fieldset>
+        <fieldset class="form-box">
+            <legend class="text-center legend-box">Pais</legend>
+            <div class="campo">
+                <label for="Pais" >Pais</label> 
+                <select id="Pais"  formControlName="Pais">
+                    <option value="">--Seleccione--</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset class="form-box">
+            <legend class="text-center legend-box">Informacion Extra</legend>
+            <div class="campo">
+                <label for="Cliente" >Cliente</label>
+                <input id="Cliente" type="radio" name="Tipo" formControlName="Tipo" class="input-radio" value="Cliente">
+            </div>
+            <div class="campo">
+                <label for="Provedor" >Provedor</label>
+                <input id="Provedor" type="radio" name="Tipo" formControlName="Tipo" class="input-radio" value="Provedor">
+            </div>
+            <div class="campo">
+                <label for="Categoria" >Categorias</label>
+                <input list="Categoria" name="Categoria" formControlName="Categoria" class="input-datalist">
+                <datalist id="Categoria">
+                    <option value="Cocina">
+                    <option value="Exterior">
+                    <option value="Recamaras">
+                    <option value="Oficina">
+                    <option value="Television">    
+                </datalist>
+            </div>
+        </fieldset>
+        <button type="submit" [disabled]="formUser.invalid" class="btn">Enviar Formulario</button>
+    </form>
+</main>

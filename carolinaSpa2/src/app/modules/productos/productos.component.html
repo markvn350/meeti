@@ -1,0 +1,17 @@
+<main class="productos ">
+    <div class="productos__contenedor contenedor">
+    <h2 class="productos__heading">nuestros <span> Productos </span></h2>
+    <div class="productos__grid">
+        <div class="producto" *ngFor="let producto of productos; index as i">
+            <div class="producto__imagen">
+                <img class="producto__img" src="../../../assets/img/producto_0{{i+1}}.jpg" alt="producto imagen">
+            </div>
+            <div class="producto__contenido">
+                <h3 class="producto__nombre">{{producto.nombre}}</h3>
+                <p class="producto__descripcion">{{producto.descripcion}}</p>
+                <p class="producto__precio">{{producto.precio}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</main>

@@ -1,0 +1,83 @@
+@use "../../../../mixin.scss" as m;
+@use "../../../../variables.scss" as v;
+
+
+
+.sociales{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    &__enlace{
+
+        &::before{
+            content: "";
+            padding: 1.5rem;
+            display: inline-block;
+        }
+        &[href*="facebook.com"]::before{
+            background-image: url("../../../../assets/img/icono_facebook.svg");
+        }
+        &[href*="twitter.com"]::before{
+            background-image: url("../../../../assets/img/icono_twitter.svg");
+        }
+        &[href*="pinterest.com"]::before{
+            background-image: url("../../../../assets/img/icono_pinterest.svg");
+        }
+        &[href*="instagram.com"]::before{
+            background-image: url("../../../../assets/img/icono_instagram.svg");
+        }
+        &[href*="youtube.com"]::before{
+            background-image: url("../../../../assets/img/icono_youtube.svg");
+        }
+        &[href*="tiktok.com"]::before{
+            background-image: url("../../../../assets/img/icono_tiktok.svg");
+        }
+
+        
+    }
+
+    &__accesible{
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        padding: 0px;
+        border: 0px;
+        margin: -1px;
+        clip: rect(0,0,0,0);
+        display: block;
+    }
+}
+
+.footer{
+    margin-top: 3.5rem;
+    text-align: center;
+    &__grid{
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            justify-content: space-between;
+        }
+    }
+
+    &__heading{
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 2rem;
+    }
+
+    &__texto{
+        line-height: 1.5;
+        font-size: 1.35rem;
+    }
+
+
+    &__copyright{
+        margin-top: 1rem;
+        color: v.$gris;
+        line-height: 1.5;
+        padding: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+}

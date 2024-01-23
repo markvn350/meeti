@@ -1,0 +1,98 @@
+@use "../../../../mixin.scss" as m;
+@use "../../../../variables.scss" as v;
+
+.header{
+    padding-top: 3.5rem;
+
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include m.tablet{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+    &__logo{
+        max-width: 20rem;
+    }
+}
+
+.navigation{
+    background-color: v.$primario;
+    color: v.$blanco;
+    padding: 0.5rem;
+    margin: 1.5rem 0px;
+
+    &__border{
+        border-block: 1.8px dashed v.$blanco;
+        padding: 1rem 0px;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        @include m.tablet{
+            flex-direction: row;
+        }
+
+        justify-content: space-between;
+        
+    }
+
+    &__link{
+        cursor: pointer;
+        margin: 0.35rem;
+        @include m.tablet{
+            margin: 0px;
+        }
+    }
+}
+
+.sociales{
+    text-decoration: none;
+    display: flex;
+    &__enlace{
+
+        &::before{
+            content: "";
+            padding: 1.5rem;
+            display: inline-block;
+        }
+        &[href*="facebook.com"]::before{
+            background-image: url("../../../../assets/img/icono_facebook.svg");
+        }
+        &[href*="twitter.com"]::before{
+            background-image: url("../../../../assets/img/icono_twitter.svg");
+        }
+        &[href*="pinterest.com"]::before{
+            background-image: url("../../../../assets/img/icono_pinterest.svg");
+        }
+        &[href*="instagram.com"]::before{
+            background-image: url("../../../../assets/img/icono_instagram.svg");
+        }
+        &[href*="youtube.com"]::before{
+            background-image: url("../../../../assets/img/icono_youtube.svg");
+        }
+        &[href*="tiktok.com"]::before{
+            background-image: url("../../../../assets/img/icono_tiktok.svg");
+        }
+
+        
+    }
+
+    &__accesible{
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        padding: 0px;
+        border: 0px;
+        margin: -1px;
+        clip: rect(0,0,0,0);
+        display: block;
+    }
+}

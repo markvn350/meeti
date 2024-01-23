@@ -1,0 +1,65 @@
+@use "../../../mixin.scss" as m;
+@use "../../../variables.scss" as v;
+
+.productos{
+    margin-top: 3.5rem;
+    &__heading{
+        @include m.headingCursiva;
+        font-size: 3.2rem;
+        
+    }
+
+    &__grid{
+        display: flex;
+        flex-direction: column;
+
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        gap: 1.5rem;
+    }
+}
+
+.producto{
+    background-color: v.$blanco;
+    &__nombre{
+        color: v.$secundario;
+        font-size: 2.4rem;
+        text-align: center;
+        margin: 1.5rem;
+    }
+
+    &__precio{
+        color: v.$gris;
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+
+    &__descripcion{
+        font-size: 2rem;
+        @include m.tablet{
+            padding: 0.5rem;
+            font-size: 1.1rem;
+        }
+        @include m.desktop{
+            font-size: 1.6rem;
+        }
+        padding: 1.25rem;
+    }
+
+    &__imagen{
+        width: 100%;
+        overflow: hidden;
+       
+    }
+
+    &__img{
+        transition-property: transform;
+        transition-duration: 300ms;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}

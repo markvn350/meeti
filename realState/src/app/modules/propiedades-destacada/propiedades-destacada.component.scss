@@ -1,0 +1,81 @@
+
+@use "../../../mixin.scss" as m;
+@use "../../../variables.scss" as v;
+
+
+.pDestacada{
+    margin-top: 4rem;
+    min-height: 45rem;
+    background-image: linear-gradient(to bottom , transparent 0%  , transparent 50%, v.$primario 50%,  v.$primario 100%),
+     url("../../../assets/img/destacada.jpg");
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    background-position: center, -28rem -10rem;
+    @include m.tablet{
+        background-image: linear-gradient(to right, transparent 0%  , transparent 50% ,v.$primario 50%,  v.$primario 100%,),
+        url("../../../assets/img/destacada.jpg");    
+        min-height: 27rem;
+        background-position: center, -20rem;
+    }
+
+    @include m.desktop{
+        background-position: center, -30rem;
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 3rem;
+        @include m.tablet{
+            grid-template-rows: unset;
+            row-gap: unset;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 3rem;
+        }
+        
+    }
+
+    &__contenido{
+        color: v.$blanco;
+        padding: 1.6rem;
+        line-height: 1.5;
+        grid-row: 2/3;
+        @include m.telefono{
+            margin-top: 2rem;
+        }
+        @include m.tablet{
+            padding: 1rem;
+            grid-column: 2/3;
+        }
+        @include m.desktop{
+            padding: 2.8rem;
+        }
+        
+    }
+
+    &__descripcion{
+        margin: 0px;
+    }
+
+    &__heading{
+        text-align: center;
+        text-transform: uppercase;
+        color: v.$blanco;
+    }
+
+    &__precio{
+        font-size: 1.3rem;
+        margin: 0.75rem;
+        font-weight: 700;
+    }
+
+    &__link{
+        @include m.boton( v.$blanco, v.$primario );
+        border-radius: unset;
+        margin-top: 1rem ;
+        padding: 0.35rem;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+    
+}

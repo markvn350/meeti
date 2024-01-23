@@ -1,0 +1,36 @@
+@use "../../../../mixins.scss" as m;
+@use "../../../../variables.scss" as v;
+
+.navigation{
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    &__link{
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        color: v.$negro;
+
+        &--create{
+            padding: 1rem 1.5rem;
+            color: v.$primario;
+            border-right: 2px solid v.$grisClaro;
+            font-weight: 700;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}
+
+.footer{
+
+    &__copyright{
+        padding: 2rem 0px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}

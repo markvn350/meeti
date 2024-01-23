@@ -1,0 +1,102 @@
+
+
+.contenedor{
+    margin: 0px auto;
+    max-width: 60rem;
+ }
+ 
+ .listado-categorias{
+     text-align: center;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 1.25rem;
+     z-index: 2;
+ }
+ .subTitulo{
+     text-align: center;
+     padding: 2rem;
+     
+ }
+
+ .categoria a{
+    display: block;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    padding: 0.7rem;
+ }
+
+.categoria a:hover{
+    background-color: #037bc0;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+.nosotros-principal{
+    display: flex;
+    width: 100%;
+    margin: 3rem 0px 0rem 0px;
+   
+}
+
+h2{
+    font-size: 1.7rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+ 
+.nosotros-img{
+    width: 50%;
+    height: 15.625rem;
+    background-image: url("../../../../assets/images/nosotros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0px;
+}
+
+.contenedor-nosotros{
+    width: 50%;
+    height: 15.625rem;
+    background-color: #037bc0;
+    color: white;
+    padding-left: 1rem;
+    margin: 0px;
+}
+
+.contenedor-nosotros p{
+    font-size: 0.75rem;
+    width: 60%;
+}
+
+.contenedor-nosotros h2{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+.contenido-principal{
+    padding-top: 0rem;
+}
+
+.imageContainer{
+    background-image: url("../../../../assets/images/principal.jpg");
+    height: 34.375rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   
+}
+.text-center{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+main{
+    padding: 0px;
+
+}
+

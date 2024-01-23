@@ -1,0 +1,11 @@
+<section class="cards contenedor">
+    <div class="cards__grid">
+        <div class="card" *ngFor="let unit of count; index as i">
+            <img class="card__img" alt="img-card" src="../../../../assets/img/servicio_0{{i+1}}.jpg">
+            <div class="card__contenido">
+                <h3 class="card__heading">{{unit}}<span>{{scount[i]}}</span></h3>
+                <a class="card__enlace">Leer mas</a>
+            </div>
+        </div>
+    </div>
+</section>

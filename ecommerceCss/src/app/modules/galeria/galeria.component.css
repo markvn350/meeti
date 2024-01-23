@@ -1,0 +1,64 @@
+.contenedor{
+    margin: 0px auto;
+    max-width: 60rem;
+ }
+
+ .contenido-principal{
+    padding-top: 0rem;
+}
+
+ul{
+    list-style: none ;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    margin: 0px;
+    padding: 0px;
+    gap: 2rem;
+}
+
+.galeria li a img{
+    
+   width: 20rem;
+   height: 12.5rem;
+   object-fit: cover;
+}
+
+h2{
+   font-size: 1.7rem;
+   text-align: justify;
+   margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+/* Utilities */
+
+.text-center{
+    text-align: center;
+}
+
+.imagen{
+    display: block;
+   
+ }
+
+ .w-20{
+    max-width: 20rem;
+ }
+
+ .m-auto{
+    margin: 2rem auto 0px auto;
+ }
+
+ .justify-text{
+    text-align: justify;
+ }

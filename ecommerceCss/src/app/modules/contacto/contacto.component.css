@@ -1,0 +1,109 @@
+.contenedor{
+    margin: 0px auto;
+    max-width: 40rem;
+ }
+
+ .contenido-principal{
+    padding-top: 0rem;
+}
+
+.formulario{
+    max-width: 40rem;
+    margin: auto;
+}
+
+.form-box{
+    border-color: black;
+    margin-bottom: 2.5rem;
+    
+}
+
+.legend-box{
+    background-color: #037bc0;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.campo{
+    display: flex;
+    margin: 1.5rem 0px 1.5rem 0;
+}
+
+.campo label{
+    flex-basis: 7rem;
+}
+
+.campo input[type="text"], input[type="tel"], input[type="email"], textarea, .campo select {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+}
+
+.input-datalist{
+    border: 1px solid #e1e1e1;
+    width: 90%;
+}
+
+
+
+
+label{
+    font-weight: 600;
+    
+}
+
+
+
+
+
+
+
+/* Utilities */
+
+.text-center{
+    text-align: center;
+}
+
+.imagen{
+    display: block;
+   
+ }
+
+ .w-20{
+    max-width: 20rem;
+ }
+
+ .m-auto{
+    margin: 2rem auto 0px auto;
+ }
+
+ .justify-text{
+    text-align: justify;
+ }
+
+ .btn{
+    background-color: #8cbc00;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color.3s ease-out;
+    padding: 0.35rem;
+    border: 0px;
+    margin: 0px auto;
+
+}
+
+.btn:hover{
+    background-color: #769c02;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 1.7rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}

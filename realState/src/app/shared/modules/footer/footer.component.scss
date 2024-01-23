@@ -1,0 +1,85 @@
+@use "../../../../mixin.scss" as m;
+@use "../../../../variables.scss" as v;
+
+
+.footer{
+    background-color: v.$primario;
+    margin-top: 3.5rem;
+    padding: 0.5rem;
+    padding-top: 3.5rem;
+    color: v.$blanco;
+    
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+    }
+
+    &__box{
+        width: 100%;
+        @include m.telefono{
+            margin: 0.75rem 0px;
+        }
+    }
+
+
+    &__heading{
+        text-transform: uppercase;
+        text-align: center;
+        @include m.tablet{
+            text-align: left;
+        }
+    }
+
+    &__img{
+        max-width: 17rem;
+        @include m.telefono{
+            margin: 0 2rem;
+        }
+        @include m.tablet{
+            margin: 0px;
+        }
+    }
+
+    &__texto{
+        @include m.telefono{
+            padding: 1.5rem;
+        }
+        @include m.tablet{
+            padding: 0rem;
+        }
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    &__copyright{
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 0rem;
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+}
+
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+
+    &__link{
+        font-size: 0.9rem;
+        line-height: 1.5;
+        @include m.telefono{
+            text-align: center;
+        }
+        @include m.tablet{
+            text-align: left;
+        }
+    }
+
+
+}

@@ -1,0 +1,42 @@
+.contenedor{
+    margin: 0px auto;
+    max-width: 60rem;
+ }
+
+.contenido-principal{
+    padding-top: 0rem;
+}
+
+.contenedor-base{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    gap: 4rem;
+}
+
+.imagen{
+   display: block;
+  
+}
+
+.informacion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p{
+    font-size: 80%;
+}
+
+h2{
+    font-size: 1.7rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+/* Utilities */
+
+.text-center{
+    text-align: center;
+}

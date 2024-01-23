@@ -1,0 +1,135 @@
+.contenedor{
+    margin: 0px auto;
+    max-width: 60rem;
+ }
+
+ .contenido-principal{
+    padding-top: 0rem;
+}
+
+
+.text-center{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.producto{
+    background-color: #037bc0;
+}
+.texto-producto{
+    color: white;
+    text-align: center;
+    padding: 1.3rem;
+    font-size: 80%;
+}
+
+.texto-producto h3{
+    margin: 0px;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+.texto-producto p{
+    margin: 0px 0px 0.34rem 0px;
+}
+
+.descripcion-producto{
+    font-size: 95%;
+}
+
+.btn{
+    background-color: #8cbc00;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: background-color.3s ease-out;
+    padding: 0.25rem;
+}
+
+.btn:hover{
+    background-color: #769c02;
+}
+
+h2{
+    font-size: 1.7rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.precio{
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1.3rem;
+}
+
+.producto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+.producto:nth-child(1) .texto-producto{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto:nth-child(1) img{
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+}
+
+
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(2) img{
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+} 
+
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(3) img{
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+} 
+
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+main{
+    padding: 0px;
+
+}

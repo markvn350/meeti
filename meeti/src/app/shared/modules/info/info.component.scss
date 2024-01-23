@@ -1,0 +1,50 @@
+@use "../../../../mixins.scss" as m;
+@use "../../../../variables.scss" as v;
+.info{
+
+    &__heading{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-family: v.$fuentePrincipal;
+        margin: 5rem;
+    }
+
+    &__grid{
+        @include m.tablet{
+            display: grid;
+            grid-template-columns:2fr 1fr;
+            gap: 2rem;
+        }
+    }
+
+    &__img{
+        margin-bottom: 2rem;
+    }
+
+    &__data{
+        background-color: lighten(v.$secundario, 5%);
+        color: v.$blanco;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    &__nombre{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &__texto{
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__des{
+        font-size: 1.2rem;
+
+        span{
+            font-weight: 500;
+        }
+    }
+ 
+}

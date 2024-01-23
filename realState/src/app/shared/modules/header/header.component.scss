@@ -1,0 +1,103 @@
+@use "../../../../mixin.scss" as m;
+@use "../../../../variables.scss" as v;
+
+.header{
+    background-image: linear-gradient(to right, transparentize( v.$primario, 0.1) 0%, transparentize(v.$primario, 0.1) 100%), url("../../../../assets/img/header_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2.2rem 0.5rem;
+    color: v.$blanco;
+    position: relative;
+   
+    @include m.tablet{
+        padding: 2.2rem 0 12rem 0;
+    }
+    
+    
+    &__barra{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        @include m.tablet{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo{
+        img{
+            width: 15rem;
+        }
+    }
+
+    &__contenido{
+        line-height: 1.5;
+        @include m.tablet{
+            margin-top: 7rem;
+            max-width: 30rem;
+        }
+
+        
+    }
+
+    &__heading{
+        text-align: center;
+        @include m.tablet{
+            text-align: left;
+        }
+    }
+
+    &__texto{
+        display: none;
+        @include m.tablet{
+            display: block;
+        }
+    }
+
+    &__imagen{
+        display: none;
+        @include m.tablet{
+            max-width: 26rem;
+            display: block;
+            border-bottom-left-radius: 5rem;
+            position: absolute;
+            right: 0;
+            bottom: -3;
+        }
+        @include m.desktop{
+            max-width: 28rem;
+            bottom: -5rem;
+        }
+    }
+}
+
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    
+    @include m.tablet{
+        flex-direction: row;
+        gap: 1.1rem;
+    }
+
+    &__link{
+        font-size: 1rem;
+        margin-bottom: 1.4rem;
+
+        &:last-of-type{
+            margin-bottom: 0px;
+        }
+
+        @include m.tablet{
+            margin-bottom: 0%;
+        }
+    }
+}
+
+.m0{
+    margin: 0%;
+}

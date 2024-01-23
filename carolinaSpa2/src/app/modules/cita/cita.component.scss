@@ -1,0 +1,40 @@
+@use "../../../mixin.scss" as m;
+@use "../../../variables.scss" as v;
+
+.citas{
+    margin-top: 3rem;
+    background-image: url("../../../assets/img/bg_citas.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: v.$blanco;
+    padding: 2rem 0px;
+    text-align: center;
+
+    &__descripcion{
+        display: block;
+        line-height: 1.75;
+        margin: 0 auto;
+        padding: 2rem;
+        @include m.desktop{
+            max-width: 65%;
+        }
+    }
+
+    &__boton{
+        display: inline-block;
+        color: v.$blanco;
+        background-color: v.$primario;
+        padding: 1rem 5rem;
+        margin: 1rem;
+        font-size: 2rem;
+    }
+
+    &__heading{
+        font-size: 3.5rem;
+        @include m.tablet{
+            font-size: 4.5rem;
+        }
+        margin: 1.5rem;
+    }
+}

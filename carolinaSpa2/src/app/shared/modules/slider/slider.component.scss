@@ -1,0 +1,38 @@
+@use "../../../../mixin.scss" as m;
+@use "../../../../variables.scss" as v;
+
+
+
+
+.slider{
+    padding-top: 2rem;
+
+    &__contenedor{
+        padding: unset;
+    }
+
+    &__slide{
+        list-style: none;
+    }
+}
+
+
+
+.bienvenida{
+    text-align: center;
+
+    &__texto{
+        color: v.$gris;
+        font-size: 1.8rem;
+        max-width: 35rem;
+        line-height: 1.75;
+        display: block;
+        margin: 2.8rem auto 0px auto;
+    }
+
+    &__heading{
+        margin: 8rem 0px 1.5rem 0px;
+        font-size: 3rem;
+        @include m.headingCursiva;
+    }
+}

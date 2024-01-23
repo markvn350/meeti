@@ -1,0 +1,16 @@
+<main class="nucleus">
+    <h2 class="nucleus__heading">¿Que es?</h2>
+    <div class="nucleus__contenedor">
+        <div class="nucleus__grid">
+            <div class="nucleus__imagen">
+                <img src="../../../assets/img/app_2.svg" alt="app-nucleus">
+            </div>
+            <div class="listado" >
+                <div class="listado__elemento" *ngFor="let a of listP; index as i ">
+                    <h2 class="listado__heading">{{listHeading[i]}}</h2>
+                    <p class="listado__texto">{{a}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,53 @@
+@use "../../../../mixins.scss" as m;
+@use "../../../../variables.scss" as v;
+
+.formulario{
+   
+    padding: 5rem 0px;
+    background-color: v.$grisClaro;
+
+    &__heading{
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        @include m.tablet{
+            flex-direction: row;
+        }
+    }
+
+    &__campo{
+        width: 65%;
+        margin: 1rem auto;
+        font-size: 1.4rem;
+        height: 3.5rem;
+        border: 1px solid lighten(v.$gris, 50%);
+        
+        @include m.tablet{
+            width: 20%;
+            margin: 0rem auto;
+        }
+    }
+    
+
+    &__boton{
+        width: 65%;
+        margin: 1rem auto;
+        color: v.$blanco;
+        background-color: v.$primario;
+        font-size: 1.4rem;
+        height: 3.5rem;
+        border: none;
+        @include m.tablet{
+            width: 20%;
+            margin: 0rem auto;
+        }
+    }
+
+}

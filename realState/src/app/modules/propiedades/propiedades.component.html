@@ -1,0 +1,16 @@
+<main class="propiedades contenedor">
+    <h2 class="propiedades__heading">Nuestras <span>Propiedades</span></h2>
+
+    <div class="propiedades__grid">
+        <div class="propiedad" *ngFor="let propiedad of this.properties, index as i">
+            <div class="propiedad__imagen" [ngStyle]="{'background-image': ' url(' + imgURL + (i+1) + ext + ')'}">
+                <h3 class="propiedad__nombre">{{propiedad.nombre}}</h3>
+            </div>
+            <div class="propiedad__contenido">
+                <p class="propiedad__descripcion">{{propiedad.descripcion}}</p>
+                <p class="propiedad__precio">{{propiedad.precio}}</p>
+                <a class="propiedad__link">Ver propiedad</a>
+            </div>
+        </div>
+    </div>
+</main>
